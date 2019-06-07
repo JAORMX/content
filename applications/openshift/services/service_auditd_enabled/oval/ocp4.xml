@@ -17,12 +17,11 @@
     <object object_ref="obj_service_running_auditd"/>
     <state state_ref="state_service_running_auditd"/>
   </openshiftservice_test>
-  <openshiftservice_object id="obj_service_running_auditd" comment="Retrieve the ActiveState property of auditd" version="1">
+  <openshiftservice_object id="obj_service_running_auditd" comment="Retrieve state of auditd.service unit" version="1">
     <unit operation="equals">auditd.service</unit>
-    <property>ActiveState</property>
   </openshiftservice_object>
   <openshiftservice_state id="state_service_running_auditd" version="1" comment="auditd is running">
-      <value>active</value>
+      <enabled>true</enabled>
   </openshiftservice_state>
 
 </def-group>
